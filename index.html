@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & About Me</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Login Box -->
+  <div id="loginBox" class="login-box">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage"></p>
+  </div>
+
+  <!-- About Me Section (Hidden by Default) -->
+  <div id="aboutSection" style="display: none;">
+    <header>
+      <h1>About Me</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><button id="logoutButton">Logout</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>Who I Am</h2>
+        <img id="profilePhoto" src="images/profile.jpg" alt="Your Photo" class="profile-photo">
+        <p>
+          Hello, nama saya <strong>Arif Budiman Jehadu</strong>. saya seorang siswa SMKN 1 TanjungPinang. 
+          Saya senang mempelajari hal-hal baru dan meningkatkan keterampilan saya. Selamat datang di halaman pribadi saya!
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Coding</li>
+          <li>Gamer</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>kontak saya</h2>
+        <p>Hubungi: +62 895-6002-99067</p>
+      </section>
+
+      <!-- New Download Section -->
+      <section id="download" class="download-section">
+        <h2>Download Source Code</h2>
+        <p>Download source code website ini untuk dipelajari:</p>
+        <a href="./downloads/website.zip" download class="download-button">
+          <span class="download-icon">⬇️</span>
+          Download Source Code
+        </a>
+      </section>
+    </main>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
